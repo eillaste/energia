@@ -1,0 +1,210 @@
+{
+	"kalkulaatoriAndmed": {
+		"paikesepaneelid": {
+			"hinnaklass1": {
+				"krediidisumma": {
+					"min": 300,
+					"max": 25000
+				},
+				"intress": 7.9,
+				"lepingutasu": 50,
+				"igakuineHaldustasu": 1,
+				"periood": {
+					"min": 6,
+					"max": 120
+				}
+			},
+			"krediidisummaVaikevaartus": 5000,
+			"perioodiVaikevaartus": 60
+		},
+
+		"soojuspump": {
+			"hinnaklass1": {
+				"krediidisumma": {
+					"min": 300,
+					"max": 1999
+				},
+				"intress": 7.9,
+				"lepingutasu": 30,
+				"igakuineHaldustasu": 1,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass2": {
+				"krediidisumma": {
+					"min": 2000,
+					"max": 5999
+				},
+				"intress": 6.5,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 1,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass3": {
+				"krediidisumma": {
+					"min": 6000,
+					"max": 25000
+				},
+				"intress": 5.9,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 1,
+				"periood": {
+					"min": 6,
+					"max": 120
+				}
+			},
+			"krediidisummaVaikevaartus": 1000,
+			"perioodiVaikevaartus": 48
+		},
+
+		"elektriautodeLaadimislahendused": {
+			"hinnaklass1": {
+				"krediidisumma": {
+					"min": 300,
+					"max": 1999
+				},
+				"intress": 5.9,
+				"lepingutasu": 50,
+				"igakuineHaldustasu": 2,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass2": {
+				"krediidisumma": {
+					"min": 2000,
+					"max": 5999
+				},
+				"intress": 4.5,
+				"lepingutasu": 40,
+				"igakuineHaldustasu": 2,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass3": {
+				"krediidisumma": {
+					"min": 6000,
+					"max": 25000
+				},
+				"intress": 3.9,
+				"lepingutasu": 30,
+				"igakuineHaldustasu": 2,
+				"periood": {
+					"min": 6,
+					"max": 120
+				}
+			},
+			"krediidisummaVaikevaartus": 1000,
+			"perioodiVaikevaartus": 48
+		},
+
+		"offGridVorguvabaElekter": {
+			"hinnaklass1": {
+				"krediidisumma": {
+					"min": 300,
+					"max": 1999
+				},
+				"intress": 7.9,
+				"lepingutasu": 30,
+				"igakuineHaldustasu": 0,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass2": {
+				"krediidisumma": {
+					"min": 2000,
+					"max": 5999
+				},
+				"intress": 6.5,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 0,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass3": {
+				"krediidisumma": {
+					"min": 6000,
+					"max": 25000
+				},
+				"intress": 5.9,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 0,
+				"periood": {
+					"min": 6,
+					"max": 120
+				}
+			},
+			"krediidisummaVaikevaartus": 5000,
+			"perioodiVaikevaartus": 60
+		},
+
+		"elektriJaGaasitood": {
+			"hinnaklass1": {
+				"krediidisumma": {
+					"min": 300,
+					"max": 999
+				},
+				"intress": 9.9,
+				"lepingutasu": 30,
+				"igakuineHaldustasu": 1,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass2": {
+				"krediidisumma": {
+					"min": 1000,
+					"max": 1999
+				},
+				"intress": 8.9,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 1,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass3": {
+				"krediidisumma": {
+					"min": 2000,
+					"max": 5999
+				},
+				"intress": 7.5,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 0,
+				"periood": {
+					"min": 6,
+					"max": 72
+				}
+			},
+			"hinnaklass4": {
+				"krediidisumma": {
+					"min": 6000,
+					"max": 25000
+				},
+				"intress": 6.9,
+				"lepingutasu": 20,
+				"igakuineHaldustasu": 0,
+				"periood": {
+					"min": 6,
+					"max": 120
+				}
+			},
+			"krediidisummaVaikevaartus": 1000,
+			"perioodiVaikevaartus": 48
+		}
+	}
+}

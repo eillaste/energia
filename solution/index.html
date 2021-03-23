@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="./src/css/style.css" rel="stylesheet">
+</head>
+
+<body onload="loadData()">
+
+<h1>Kuumaksete kalkulaator</h1>
+<p class="teenus">Teenus:</p>
+
+<!-- User Form -->
+  <form name="service-group" autocomplete="off" >
+    <div class="row flex-container">
+
+      <div class="row-item flex-child">
+        <input type="radio" name="services" class="user_input" id="paikesepaneelid"  value="paikesepaneelid"checked /><label for="paikesepaneelid" class="service-label">Päikesepaneelid</label>
+      </div>
+
+      <div class="row-item flex-child">
+        <input type="radio" name="services" class="user_input" id="soojuspump" value="soojuspump" /><label for="soojuspump" class="service-label">Soojuspumbad</label>
+      </div>
+
+      <div class="row-item flex-child">
+        <input type="radio" name="services" class="user_input" id="elektriJaGaasitood"  value="elektriJaGaasitood" /><label for="elektriJaGaasitood" class="service-label">Elektri ja gaasitööd</label>
+      </div>
+
+      <div class="row-item flex-child">
+        <input type="radio" name="services" class="user_input" id="offGridVorguvabaElekter" value="offGridVorguvabaElekter" /><label for="offGridVorguvabaElekter" class="service-label">Off-grid võrguvaba elekter</label>
+      </div>
+
+      <div class="row-item flex-child">
+        <input type="radio" name="services" class="user_input" id="elektriautodeLaadimislahendused" value="elektriautodeLaadimislahendused" /><label for="elektriautodeLaadimislahendused" class="service-label">Elektriautode laadimislahendused</label>
+      </div>
+    </div>
+  </form>
+  
+  <hr>
+
+  <div class="flex-container">
+    <div class="flex-child left">
+
+  <!-- Sum slider -->
+      <div class="slidecontainer">
+        <p>Summa:</p>
+        <input type="range" min="1" max="100"  class="slider range user_input" id="summa" autocomplete="off">
+        <output class="bubble" value="20">5000</output>
+          <div id="slider-parent">
+          <p id="slider-left">min</p><p id="slider-right">max</p>
+        </div>
+      </div>
+
+      <hr>
+
+    <div id="left-lower">
+      <div class="row">
+
+      <!-- Period picker -->
+        <div class="col"> 
+        <label for="periood">Periood: <span class="required-field">*</span></label>
+          <select name="periood" id="periood" class="user_input">
+            <option value="6">6</option>
+            <option value="12">12</option>
+            <option value="18">18</option>
+            <option value="24">24</option>
+          </select>
+        </div>
+
+        <!-- First contribution input -->
+          <div class="col"> 
+              <label for="sissemakse" >Sissemakse (eur): <span class="required-field">*</span></label>
+              <input type="number" id="sissemakse" name="quantity" min="0" max="5000" autocomplete="off">   
+          </div>
+      </div>  
+     </div>
+    </div>
+
+    
+    <!-- Summary -->
+    <div class="flex-child right">
+      <table>
+        <tr>
+          <td class="td-title">Intress</td>
+          <td class="numeric" id="intress">0</td>
+        </tr>
+        <tr>
+          <td class="td-title">Lepingutasu</td>
+          <td class="numeric" id="lepingutasu">0</td>
+        </tr>
+        <tr>
+          <td class="td-title">Igakuine haldustasu</td>
+          <td class="numeric" id="igakuineHaldustasu">0</td>
+        </tr>
+        <tr>
+          <td class="td-title">Periood</td>
+          <td class="numeric" id="perioodSummary">0</td>
+        </tr>
+        <tr>
+          <td class="td-title">Projekti maksumus</td>
+          <td class="numeric" id="projektiMaksumus">0</td>
+        </tr>
+        <tfoot>
+          <tr>
+            <td>Kuumakse</td>
+            <td class="numeric" id="kuumakse">0</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+  </div>
+
+  <button class="submit" onclick="controller.thx()">Esitan taotluse ></button>
+
+  <script src="src/js/Model.js"></script>
+  <script src="src/js/View.js"></script>
+  <script src="src/js/Controller.js"></script>
+  <script src="src/js/Index.js"></script>
+
+</body>
+
+</html>

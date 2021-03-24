@@ -39,7 +39,6 @@ class View {
 	}
 
 	updateService(service, minPrice, maxPrice, defaultCreditAmount, period, minPeriod, maxPeriod, summa) {
-		//this.service.innerHTML = service;
 		this.sissemakse.value = 0;
 		this.updateFormDefaults(minPrice, maxPrice, defaultCreditAmount, period, minPeriod, maxPeriod, summa);
 	}

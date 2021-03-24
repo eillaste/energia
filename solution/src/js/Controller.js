@@ -1,9 +1,4 @@
 class Controller {
-	constructor(model, view) {
-		this.model = model;
-		this.view = view;
-	}
-
 	updateView(userChoice) {
 		let minPrice = Math.min(...Object.values(model.hinnaklassid).flat());
 		let maxPrice = Math.max(...Object.values(model.hinnaklassid).flat());
@@ -17,7 +12,6 @@ class Controller {
 
 		document.querySelectorAll("input[type='radio']").forEach((i) => (i.parentNode.style.background = '#fff'));
 		document.querySelectorAll("input[type='radio']:checked")[0].parentNode.style.background = '#f6f9f9';
-		//controller.changeService.bind(controller);
 	}
 
 	updateModel(userChoice) {

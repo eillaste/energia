@@ -20,7 +20,6 @@ class Model {
 		let calculationResults = this.calculateMonthlyFeeAndTotalCost();
 		this.calculatorData.projektiMaksumus = calculationResults[0];
 		this.calculatorData.kuumakse = calculationResults[1];
-		//ready to update view
 	}
 
 	setFormData() {
@@ -53,7 +52,6 @@ class Model {
 		this.formData[property] = value;
 		this.setServicePriceClass();
 		this.setCalculatorData();
-		// ready to update view
 	}
 
 	calculateMonthlyFeeAndTotalCost() {
